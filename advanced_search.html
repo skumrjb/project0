@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <style>
+        /* Style the header with a grey background and some padding */
+        .header {
+        overflow: hidden;
+        background-color: rgb(255,255,255) ;
+        padding: 20px 10px;
+        }
+
+        /* Style the header links */
+        .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 15px;
+        border-radius: 4px;
+        font-family: Arial;
+        }
+
+        /* Float the link section to the right */
+        .header-right {
+        float: right;
+        }
+
+        form {
+        width: 50rem;
+        margin-top : 30px;
+        margin-left : 32px;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-gap: 15px;
+        font-family: Arial;
+        }
+
+        label {
+            grid-column: 1 / 2;
+            padding: 0.5em 0.5em 0.5em 0;
+            font-size:14px;
+        }
+
+        input {
+            grid-column: 2 / 4;
+            padding: 0.7em;
+            margin-bottom: 0.5rem;
+            outline: 1px gainsboro;
+        }
+        
+        input:focus {
+        outline: 1px solid rgb(71,136,238) ;
+        }
+
+        button {
+            position: absolute;
+            margin-left: 44.5rem;
+            margin-top: 1.5em;
+            text-align: center;
+            grid-column: 2/4;
+            width: 120px;
+            padding: 7.5px 2.5px;
+            font-size : 12px;
+            font-family: Arial;
+            background-color: rgb(71,136,238);
+            color:white;
+            border: none;
+            font-weight: 550;
+            font-size: 11px;
+        }
+
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight:500 ;
+            margin-left : 32px;
+            color : rgb(217,47,36)
+        } 
+
+        h4 {
+            margin-top: 40px;
+            margin-left: 32px;
+            font-size: 17px;
+            font-weight: normal;
+            font-family: Arial;
+        }
+
+        hr {
+            border-top: 1px gray ;
+        }
+
+        .text{
+            margin-left: 32px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10px;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <!-- Header-->
+        <div class="header">
+            <a href ="index.html">
+            <img src="google-logo.png" alt="Google Logo" width="83" height="35" class="logo"> </a>
+            <div class="header-right">
+              <a class="active" href="index.html">Google Search</a>
+            </div>
+        </div>
+
+        <div id="Heading">
+            
+            <h3 class="Red text">Advanced Search</h3>
+            <hr>
+        </div>
+        <h4> Find pages with...</h4>
+        <div class="grid-container">
+            <form action="https://google.com/search">
+                <label for="asq" class="asq">all these words:</label> 
+                <input id="asq" name="as_q" type="text">
+
+                <label for="asepq" class="asepq">this exact word or phrase:</label> 
+                <input id="asepq" name="as_epq" type="text">
+
+                <label for="asoq" class="asoq">any of these words:</label> 
+                <input id="asoq" name="as_oq" type="text">
+
+                <label for="aseq" class="aseq">none of these words:</label> 
+                <input id="aseq" name="as_eq" type="text">            
+        </div>
+            <div><button>Advanced Search</button></div> <!-- button-->     
+            </form> 
+    </body>
+</html>

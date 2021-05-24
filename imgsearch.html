@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image Search</title>
+        <style>
+            
+            #toprightlinks {
+                overflow: hidden;
+                background-color: rgb(255,255,255) ;
+                padding: 20px 10px;
+            }
+
+            #toprightlinks > a {
+                float: right;
+                color: black;
+                text-align: center;
+                padding: 10px;
+                text-decoration: none;
+                font-size: 13px;
+                line-height: 15px;
+                border-radius: 4px;
+                font-family: Arial;
+            }
+
+            #Logo {
+                position: absolute;
+                left: 41%;
+                top: 26%;
+            }
+
+            .round {
+                width: 160%;
+                border-radius: 15px;
+                border: 1px gainsboro solid;
+                padding: 5px 5px 5px 25px;
+                position: absolute;
+                top: 115%;
+                left: -35%;
+                z-index: 5;
+                align-content: center;
+
+            }
+            .round:hover {
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            .corner{
+                display: inline-block;
+                position: absolute;
+                bottom: -125%;
+                left: 25%;
+                background-color: #f1f1f1;
+                font-family: Arial;
+                border:none;
+                padding: 10px 18px;
+                
+            }
+
+            .corner:hover {
+                border: 1px solid gainsboro;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Top right links-->
+        <div id="toprightlinks">
+            <a href="index.html">Google Search</a>
+        </div>
+        <!--Google Images Logo-->
+        <div id="Logo">
+            <img src="Google_Images_2015_logo.png" alt="Google Logo" width="250" height="80">
+        
+        <!--Search bar and buttons-->
+        <form id="search-form" action="https://google.com/images" autocomplete="on">
+            <div class="search">
+            <input type="text" name="q" class="round" autofocus>
+            <input type="submit" value="Google Images Search" class="corner">     <!-- button-->
+        </div>
+        </div>
+        </form>
+    </body>
+</html>
